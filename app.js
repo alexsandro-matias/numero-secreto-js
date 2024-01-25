@@ -9,7 +9,7 @@
 let listaDeNumerosSorteados = [];
 let numeroSecreto = gerarNumeroAleatorio()
 let tentativas = 1;
-let numeroLimite = 10;
+let numeroLimite = 100;
 
 
 
@@ -42,7 +42,7 @@ function exibirTextoTela(tag, texto) {
 exibirTelaInicial()
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 100 + 1);
     let quantidadeNumerosLista = listaDeNumerosSorteados.length;
 
     // esvaziando a lista para caso a quantidade de números sorteados seja ultrapassada.
@@ -80,5 +80,5 @@ function reiniciarJogo() {
 
 function exibirTelaInicial() {
     exibirTextoTela('h1', 'Jogo do Número secreto');
-    exibirTextoTela('p', 'Digite um número de 1 a 10: ');
+    exibirTextoTela('p', 'Digite um número de 1 a 100: ');
 }
